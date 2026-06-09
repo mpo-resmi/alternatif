@@ -6,56 +6,74 @@
 <title>MPOID</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 }
 
 body{
 background:#000;
-background-image:radial-gradient(#333 1px, transparent 1px);
+background-image:radial-gradient(#222 1px, transparent 1px);
 background-size:20px 20px;
-color:white;
-text-align:center;
-padding:20px;
+font-family:"Courier New", monospace;
+color:#fff;
+padding:12px;
+max-width:1000px;
+margin:auto;
 }
 
 h1{
-font-size:40px;
+text-align:center;
+font-size:48px;
 font-weight:bold;
-margin-bottom:20px;
+line-height:1.1;
+margin:20px 0;
 }
 
 .banner{
-background:linear-gradient(90deg,#00cfff,#b300ff);
-padding:20px;
-border-radius:20px;
+background:linear-gradient(90deg,#00bfff,#b300ff);
+padding:22px;
+text-align:center;
 font-size:32px;
 font-weight:bold;
+border-radius:18px;
+border:2px solid #fff;
+box-shadow:
+0 0 15px #00bfff,
+0 0 30px #b300ff,
+0 0 50px #b300ff;
+animation:blink 1.2s infinite;
 margin-bottom:20px;
-animation:blink 1.5s infinite;
-box-shadow:0 0 20px #00cfff;
 }
 
 @keyframes blink{
 0%{
-box-shadow:0 0 10px #00cfff;
+filter:brightness(1);
 }
 50%{
-box-shadow:0 0 40px #b300ff;
+filter:brightness(1.6);
 }
 100%{
-box-shadow:0 0 10px #00cfff;
+filter:brightness(1);
 }
+}
+
+.main-box{
+border:2px solid #b300ff;
+border-radius:25px;
+overflow:hidden;
+box-shadow:
+0 0 15px #b300ff,
+0 0 35px #b300ff,
+0 0 60px #b300ff;
+margin-bottom:25px;
 }
 
 .main-img{
 width:100%;
-border-radius:20px;
-box-shadow:0 0 30px #b300ff;
-margin-bottom:20px;
+display:block;
 }
 
 .table{
@@ -64,27 +82,76 @@ border-radius:20px;
 overflow:hidden;
 }
 
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:linear-gradient(90deg,#007bff,#b300ff);
+font-size:18px;
+font-weight:bold;
+padding:18px;
+border-bottom:2px solid #000;
+}
+
 .row{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px;
+padding:25px 18px;
 border-bottom:1px solid #222;
+font-size:18px;
+}
+
+.row:last-child{
+border-bottom:none;
 }
 
 .btn{
-background:linear-gradient(90deg,#00cfff,#b300ff);
-padding:15px 35px;
-border-radius:50px;
-color:white;
+display:inline-block;
+min-width:140px;
+text-align:center;
+padding:15px 30px;
+background:linear-gradient(90deg,#00bfff,#c000ff);
+border-radius:18px;
+border:2px solid #fff;
+color:#fff;
+font-size:18px;
 font-weight:bold;
 text-decoration:none;
-animation:blink 1.5s infinite;
+box-shadow:
+0 0 15px #00bfff,
+0 0 30px #b300ff;
+animation:blink 1.2s infinite;
 }
 
 footer{
-margin-top:25px;
-opacity:.8;
+text-align:center;
+margin-top:20px;
+font-size:14px;
+opacity:.9;
+}
+
+@media(max-width:600px){
+
+h1{
+font-size:28px;
+}
+
+.banner{
+font-size:20px;
+padding:18px;
+}
+
+.row{
+font-size:15px;
+padding:18px 12px;
+}
+
+.btn{
+min-width:100px;
+padding:12px 20px;
+}
+
 }
 
 </style>
@@ -92,31 +159,39 @@ opacity:.8;
 
 <body>
 
-<h1>DAFTAR SEKARANG<br>KALO GAK PERCAYA!!</h1>
+<h1>
+DAFTAR SEKARANG<br>
+KALO GAK PERCAYA!!
+</h1>
 
 <div class="banner">
 SITUS GACOR 2026
 </div>
 
-<a href="https://mpoiderh.xyz/register/WMKK179G" target="_blank">
+<div class="main-box">
 <img src="file_00000000864071fa8595c729587352ba.png" class="main-img">
-</a>
+</div>
 
 <div class="table">
 
+<div class="header">
+<span>Situs Gacor</span>
+<span>KLIK DISINI</span>
+</div>
+
 <div class="row">
 <span>LOGIN & DAFTAR</span>
-<a class="btn" href="https://mpoiderh.xyz/register/WMKK179G" target="_blank">KLIK</a>
+<a href="https://mpoiderh.xyz/register/WMKK179G" class="btn">KLIK</a>
 </div>
 
 <div class="row">
 <span>CLAIM BONUS DISINI</span>
-<a class="btn" href="https://mpoiderh.xyz/register/WMKK179G" target="_blank">KLIK</a>
+<a href="https://mpoiderh.xyz/register/WMKK179G" class="btn">KLIK</a>
 </div>
 
 <div class="row">
 <span>LINK ALTERNATIF GACOR</span>
-<a class="btn" href="https://mpoiderh.xyz/register/WMKK179G" target="_blank">KLIK</a>
+<a href="https://mpoiderh.xyz/register/WMKK179G" class="btn">KLIK</a>
 </div>
 
 </div>
@@ -126,4 +201,4 @@ Copyright © 2026 • MPOID • AMAN & TERPERCAYA
 </footer>
 
 </body>
-  </html>
+</html>
