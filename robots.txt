@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mpo-resmi.github.io/alternatif/sitemap.xml
